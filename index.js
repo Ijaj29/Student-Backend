@@ -29,6 +29,11 @@ app.listen(3050, () => {
     console.log('Port No. 3050');
 });
 
-mongoose.connect('mongodb://127.0.0.1:27017/Backend').then(res => {
+// mongoose.connect('mongodb://127.0.0.1:27017/Backend').then(res => {
+//     console.log('DB connected');
+// });
+
+mongoose.connect('mongodb+srv://ijajjaman29:4W5tm5HAZiMKQUio@studentdata.mfu5i.mongodb.net/').then(res => {
     console.log('DB connected');
 });
+

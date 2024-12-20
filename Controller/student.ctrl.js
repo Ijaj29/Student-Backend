@@ -3,7 +3,7 @@ const path = require("path");
 const studentModel = require("../Models/student.model");
 const studentSrv = require("../Services/student.srv");
 const dirPath = path.join(
-  "E:/grivety/Batch 2/Node JS/Day 10/MERN CRUD Project/Backend",
+  "../",
   "files"
 );
 const multer = require("multer");

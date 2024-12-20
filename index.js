@@ -35,7 +35,7 @@ app.listen(3050, () => {
 
 mongoose
   .connect(
-    "mongodb+srv://ijajjaman29:4W5tm5HAZiMKQUio@studentdata.mfu5i.mongodb.net/",
+    "mongodb+srv://ijajjaman29:4W5tm5HAZiMKQUio@studentdata.mfu5i.mongodb.net/StudentData?retryWrites=true&w=majority&tls=true",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

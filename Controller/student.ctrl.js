@@ -56,6 +56,7 @@ const studentCtrl = {
             email: req.body.email,
             mobile: req.body.mobile,
             company: req.body.company,
+            paystatus: req.body.paystatus,
           };
           const newStudent = new studentModel(addData);
           newStudent.save().then((addedStudent) => {
@@ -87,6 +88,7 @@ const studentCtrl = {
       email: req.body.email,
       mobile: req.body.mobile,
       company: req.body.company,
+      paystatus: req.body.paystatus,
     };
     try {
       const studentInfo = await studentSrv.update(req.params.id, updateData, {

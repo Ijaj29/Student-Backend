@@ -2,10 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const studentModel = require("../Models/student.model");
 const studentSrv = require("../Services/student.srv");
-const dirPath = path.join(
-  "../",
-  "files"
-);
+const dirPath = path.join("../", "files");
 const multer = require("multer");
 
 const studentCtrl = {
@@ -83,11 +80,12 @@ const studentCtrl = {
       file = req.body.file;
     }
     const updateData = {
-      file: file,
-      studName: req.body.studName,
-      email: req.body.email,
-      mobile: req.body.mobile,
-      company: req.body.company,
+      // file: file,
+      // studName: req.body.studName,
+      // email: req.body.email,
+      // mobile: req.body.mobile,
+      // company: req.body.company,
+      responseId: req.body.responseId,
       paystatus: req.body.paystatus,
     };
     try {

@@ -17,6 +17,9 @@ const studentSchema = new mongoose.Schema(
     paystatus: {
       type: "String",
     },
+    responseId: {
+      type: "string",
+    },
     file: {
       type: "String",
     },
